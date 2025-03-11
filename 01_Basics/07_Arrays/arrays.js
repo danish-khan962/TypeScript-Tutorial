@@ -16,3 +16,9 @@ var arr2 = ["Danish", "Sam", "Bob"];
 for (var i = 0; i < arr2.length; i++) {
     console.log(arr2[i]);
 }
+;
+var arr3 = [];
+arr3.push(5);
+arr3.push(7);
+arr3.push(3);
+console.log(arr3);

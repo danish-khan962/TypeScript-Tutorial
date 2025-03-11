@@ -19,4 +19,11 @@ for(let i:number = 0; i<arr1.length; i++){
 const arr2: Array<string> = ["Danish", "Sam", "Bob"];
 for(let i:number = 0; i<arr2.length; i++){
     console.log(arr2[i]);
-}
+};
+
+
+const arr3: number[] = [];
+arr3.push(5);
+arr3.push(7);
+arr3.push(3);
+console.log(arr3);
