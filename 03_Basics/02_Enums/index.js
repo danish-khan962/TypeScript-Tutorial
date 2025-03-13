@@ -1,0 +1,26 @@
+//ENUM:
+/*
+    Enums is a way to define a set of named constants. Enums allow you to define a collection of related values that can be used interchangeably in your code.
+*/
+//for eg....
+/*
+For example,  let's say you're building a weather app and you want to define a set of possible weather conditions like "sunny", "cloudy", "rainy", and "snowy".
+
+                enum WeatherConditions{
+                    Sunny,
+                    Cloudy,
+                    Rainy,
+                    Snowy,
+                }
+
+In this example, WeatherConditions is the  name of the enum, and each of the values (e.g. Sunny, Cloudy, etc..) is assigned an automatic numerical value starting from 0.
+*/
+var WeatherConditions;
+(function (WeatherConditions) {
+    WeatherConditions["Sunny"] = "sunny";
+    WeatherConditions["Cloudy"] = "cloudy";
+    WeatherConditions["Rainy"] = "rainy";
+    WeatherConditions["Snowy"] = "snowy";
+})(WeatherConditions || (WeatherConditions = {}));
+var weather = WeatherConditions.Cloudy;
+console.log("Today's weather is like ".concat(weather));
